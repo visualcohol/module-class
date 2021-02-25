@@ -84,9 +84,9 @@ button.js
 import ModuleClass from 'module-class';
 import styles from './button.module.scss';
 
-let css = new Button(styles);
+let css = new ModuleClass(styles);
 
-export default function Form({ className }) {
+export default function Button({ className }) {
   return (
     <button class={css.compose(css.class('button'), className)}>Name</button>
   )
